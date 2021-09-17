@@ -1,0 +1,23 @@
+---
+title: "Lab4Package"
+author: "Hussnain Khalid and Carl Ryttmarker"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Lab4Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+In Lab 3, I made following packages:
+-
+1: Computations using ordinary least squares
+
+2: 
+
+```{r setup}
+library(Lab4Package)
+```
+```{r}
+data("iris")
+linreg(Petal.Length ~ Species + Sepal.Width, data = iris)
+```
