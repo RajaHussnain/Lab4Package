@@ -42,8 +42,3 @@ plot.linreg <- function(object, ...)
   return_objects <- list(p1, p2)
   return(return_objects)
 }
-
-
-
-
-
