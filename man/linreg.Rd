@@ -3,11 +3,8 @@
 \name{linreg}
 \alias{linreg}
 \title{Linear Regression}
-\source{
-\url{https://en.wikipedia.org/wiki/Linear_regression}{Linear Regression}
-}
 \usage{
-linreg(formula, data)
+linreg(formula, data, ...)
 }
 \arguments{
 \item{formula}{an object of class "formula"}
@@ -21,9 +18,6 @@ List of outputs
 }
 \description{
 The 'linreg' function calculate the linear regression model
-}
-\details{
-Calculate Linear regression
 }
 \note{
 'linreg' is a function like "lm" from "stats" package

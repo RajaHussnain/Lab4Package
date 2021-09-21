@@ -14,8 +14,11 @@ LazyData: true
 RoxygenNote: 7.1.1
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 Imports: 
     ggplot2,
-    dplyr
+    dplyr,
+    stats
 VignetteBuilder: knitr
+Config/testthat/edition: 3

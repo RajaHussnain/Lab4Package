@@ -8,16 +8,58 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
-In Lab 3, I made following packages:
--
-1: Computations using ordinary least squares
 
-2: 
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
 
-```{r setup}
+```{r setup, include = FALSE}
 library(Lab4Package)
 ```
+# Usage
+
+In this package we attempt to construct the <Linear Regression> package.
+
+Linear regression function:
 ```{r}
 data("iris")
-linreg(Petal.Length ~ Species + Sepal.Width, data = iris)
+# linear = linreg(Petal.Length ~ Species + Sepal.Width, data = iris)
+linear = linreg(Petal.Length~Sepal.Width+Sepal.Length, data = iris)
+```
+For a quick overview of our model we print out the coefficients and coefficient names, similar as done by the Linear Regression package.
+
+```{r}
+print(linear)
+```
+Plot of "Residuals vs Fitted" graph and the "Scale-Location" graph:
+
+```{r fig, fig.height = 5, fig.width = 5, fig.align = "center"}
+linear1 = linreg(Petal.Length~Species, data = iris)
+plot(linear1)
+```
+
+For vector of residuals, similar as done by the Linear Regression package.
+
+```{r}
+resid(linear)
+```
+
+For predicted values, similar as done by the Linear Regression package.
+
+```{r}
+pred(linear)
+```
+
+For coefficients, similar as done by the Linear Regression package.
+
+```{r}
+coef(linear)
+```
+For summary, similar as done by the Linear Regression package.
+
+```{r}
+summary(linear)
 ```
