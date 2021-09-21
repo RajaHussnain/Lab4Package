@@ -22,7 +22,8 @@ summary.linreg <- function(object, ...)
   summary_df[,1] <- round(as.numeric(object[["Regressions coefficients"]]), 5)
   summary_df[,2] <- round(as.numeric(sqrt(diag(object[["The variance of the regression coefficients"]]))), 5)
   summary_df[,3] <- round(as.numeric(object[["t values"]]), 5)
-  summary_df[,4] <- sapply(object[["p values"]],
+  summary_df[,4] <- object[["p values"]]
+  summary_df[,5] <- sapply(object[["p values"]],
                            function(x) if(x < 0.001) {"***"}
                            else if (x < 0.01) {"**"}
                            else if (x < 0.05) {"*"}
@@ -30,7 +31,7 @@ summary.linreg <- function(object, ...)
                            else {" "})
   cat("Call:\n")
   print(object[["call"]])
-  colnames(summary_df) <- c("Estimate", "Std. Error", "t value", "Pr(>|t|)")
+  colnames(summary_df) <- c("Estimate", "Std. Error", "t value", "Pr(>|t|)", "")
   cat("\nCoefficients:\n")
   print(summary_df)
   cat("---\n")
