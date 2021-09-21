@@ -1,3 +1,4 @@
+
 #' Vector of residuals (e) method of S3 class
 #' @title S3 Generic function for Vector of residuals (e) \code{linreg}
 #' @param object An object of class linreg
@@ -8,7 +9,6 @@
 
 resid <- function (object, ...) UseMethod("resid")
 
-#' @import stats
 #' @title Vector of residuals
 #' @description From S3 function return residuals object
 #' @param object object of class "linreg"

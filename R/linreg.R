@@ -52,10 +52,5 @@ linreg <- function(formula, data, ...){
                         "The residual variance" = residual_variance,
                         "The variance of the regression coefficients" = variance_coefficients, "t values" = t_values,
                         "p values" = p_values, "call" = call)
-  # return(return_object[["The fitted values"]])
   return(new_linreg(return_object))
 }
-
-# linreg(Petal.Length ~ Species + Sepal.Width, data = iris)
-
-

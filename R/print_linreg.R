@@ -1,5 +1,7 @@
+
+
 #' Print S3 class method
-#' @title S3 Generic function to print \code{linreg}
+#' @title S3 Generic function to print linreg
 #' @param object An object of class linreg
 #' @param ... Parameters
 #' @export

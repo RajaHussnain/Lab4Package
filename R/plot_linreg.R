@@ -1,4 +1,6 @@
 #' Plot S3 class method
+#' @import ggplot2
+
 #' @title Plot Residuals vs Fitted values
 #' @param object An object of class linreg
 #' @param ... Parameters
@@ -8,8 +10,6 @@
 
 plot <- function (object, ...) UseMethod("plot")
 
-#' @import ggplot2
-#' @import stats
 #' @title Plot graph of Residuals vs Fitted values and Standardized residuals vs Fitted values
 #' @description An S3 function to plot Residuals vs Fitted graph
 #' @param object An object of class linreg

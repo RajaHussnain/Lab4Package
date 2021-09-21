@@ -2,7 +2,7 @@
 % Please edit documentation in R/print_linreg.R
 \name{print}
 \alias{print}
-\title{S3 Generic function to print \code{linreg}}
+\title{S3 Generic function to print linreg}
 \usage{
 print(object, ...)
 }
