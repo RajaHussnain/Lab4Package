@@ -6,8 +6,7 @@ Author: Hussnain Developer [aut, cre],
   Carl Developer [aut]
 Maintainer: Hussnain <hussnainkhalid92@gmail.com>,
     Carl <carl.ryttmarker@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Implementing Linear regression package.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
